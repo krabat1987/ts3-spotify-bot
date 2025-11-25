@@ -1,0 +1,14 @@
+{
+  "teamspeak": {
+    "host": "your-ts3-server.com",
+    "nickname": "SpotifyBot",
+    "password": "your_server_query_password",
+    "channel": "Music"
+  },
+  "spotify": {
+    "clientId": "your_spotify_client_id",
+    "clientSecret": "your_spotify_client_secret",
+    "redirectUri": "http://localhost:8888/callback",
+    "refreshToken": "optional_refresh_token"
+  }
+}
