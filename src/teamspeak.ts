@@ -21,8 +21,8 @@ export class TeamspeakBot {
 
       this.teamspeak = await TeamSpeak.connect({
         host: this.config.teamspeak.host,
-        queryport: 10011,
-        serverport: 9987,
+        queryport: this.config.teamspeak.queryport || 10011,
+        serverport: this.config.teamspeak.serverport || 9987,
         username: 'serveradmin',
         password: this.config.teamspeak.password || '',
         nickname: this.config.teamspeak.nickname

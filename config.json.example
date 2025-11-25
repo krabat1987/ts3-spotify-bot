@@ -1,6 +1,8 @@
 {
   "teamspeak": {
     "host": "your-ts3-server.com",
+    "queryport": 10011,
+    "serverport": 9987,
     "nickname": "SpotifyBot",
     "password": "your_server_query_password",
     "channel": "Music"

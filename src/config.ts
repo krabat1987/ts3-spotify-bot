@@ -22,6 +22,8 @@ export function loadConfig(): BotConfig {
   const config: BotConfig = {
     teamspeak: {
       host: process.env.TS3_HOST || 'localhost',
+      queryport: process.env.TS3_QUERYPORT ? parseInt(process.env.TS3_QUERYPORT, 10) : undefined,
+      serverport: process.env.TS3_SERVERPORT ? parseInt(process.env.TS3_SERVERPORT, 10) : undefined,
       nickname: process.env.TS3_NICKNAME || 'SpotifyBot',
       password: process.env.TS3_PASSWORD,
       channel: process.env.TS3_CHANNEL

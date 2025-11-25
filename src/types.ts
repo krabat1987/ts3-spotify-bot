@@ -9,6 +9,8 @@ export interface Song {
 export interface BotConfig {
   teamspeak: {
     host: string;
+    queryport?: number;
+    serverport?: number;
     nickname: string;
     password?: string;
     channel?: string;

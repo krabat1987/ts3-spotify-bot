@@ -74,6 +74,8 @@ Edit `config.json` with your credentials:
 {
   "teamspeak": {
     "host": "your-ts3-server.com",
+    "queryport": 10011,
+    "serverport": 9987,
     "nickname": "SpotifyBot",
     "password": "your_server_query_password",
     "channel": "Music"
@@ -85,6 +87,15 @@ Edit `config.json` with your credentials:
   }
 }
 ```
+
+**TeamSpeak Configuration Fields:**
+- `host` - TeamSpeak server hostname or IP
+- `queryport` - ServerQuery port (default: 10011)
+- `serverport` - Server voice port (default: 9987)
+- `nickname` - Bot's display name
+- `password` - ServerQuery password
+- `channel` - Channel name to join (optional)
+
 
 #### Option B: Using environment variables
 
@@ -98,6 +109,8 @@ Edit `.env` with your credentials:
 
 ```env
 TS3_HOST=your-ts3-server.com
+TS3_QUERYPORT=10011
+TS3_SERVERPORT=9987
 TS3_NICKNAME=SpotifyBot
 TS3_PASSWORD=your_server_query_password
 TS3_CHANNEL=Music
